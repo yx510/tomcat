@@ -71,7 +71,7 @@ public abstract class AbstractCatalinaCommandTask extends AbstractCatalinaTask {
             } else {
                 buffer.append("?path=");
                 buffer.append(URLEncoder.encode(this.path, getCharset()));
-                if (this.version != null) {
+                if (null != this.version) {
                     buffer.append("&version=");
                     buffer.append(URLEncoder.encode(this.version, getCharset()));
                 }
